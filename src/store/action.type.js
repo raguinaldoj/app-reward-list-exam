@@ -1,0 +1,5 @@
+export const FETCH_REWARD_LIST = 'fetchRewardList'
+export const SET_REWARD_LIST = 'setRewardList'
+export const SET_REWARD = 'setReward'
+export const FETCH_REWARD_LIST_BY_ID = 'fetchRewardListById'
+export const SET_LOADING = 'setLoading'
