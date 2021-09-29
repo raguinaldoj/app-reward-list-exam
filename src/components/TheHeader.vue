@@ -1,8 +1,8 @@
-<template>
+cl<template>
   <nav class="navbar navbar-light">
     <div id="header-container" class="container">
       <router-link class="navbar-brand" :to="{ name: 'RewardList' }">
-         <img class="header-logo" :src="'https://uca6b96776629a91e427a203d203.previews.dropboxusercontent.com/p/thumb/ABR09AJVXDjXb-9Llh-Gjcob8fGXEy_FmPo3vL8B_S0fae5t-23G6tELULjR-LGwIpd69n1xZcMOr5FE8Q30JnrrJaOWkD1R265WRyi-NMIaRx7_FfiXRsRbD42BV73gFEZzEu1iEI0h1OncGnO9VKFiX1WxtvlDmPm2p9dkShj8w_OBf6fxRPIcM0VlCMtQHfrRAkvggh-J-ed-MWkgbs26vdoGPpQQl2I0xJdPj5SF6aw2jI3SykrtK15JM9scIL49-nChMwQI6u89mmP2pb6ZG4NyIHfaW5jw3mEXliXfj1KXgJ_Rf5s-do9FcclogA7yX2VRIiI_gY5IMD8dUAVnc-Q1uyjkv1QCeGchnlY8KQ/p.png?fv_content=true&size_mode=5'" />
+         <img class="header-logo" :src="'https://uc96905bb567ea7e42454c147e14.previews.dropboxusercontent.com/p/thumb/ABS-rzZ9exCdHc1rteyikN79phQjdEEVqC-USkXeNQ_7a9Onm8Fx3KWZ0WXwtq3x3QgslbmAVyO-_FzvIyxtsIlT__YYPwyfMJZMZbFT3ZXwV6SAxweGo2WK5W9RDbOh7tqfueRJbK6-dME0N5mx82iCnoQaW00LyrNxC3BusYOMQdyNQaKjCbZf12o1anQVuSu2U_kdBRUo19zU2IlPzvc8TaJFjR-aJu89o4SQUXgjgcNxmnuEyHrCxW7q7aWRRIuXEOjmtPVswDs7tSfeCu7vbCwqobB9WopRzNMqlidCWhTatTiSaoniFfanaFU5LgV7Kq7PxgG-wUPQ4MWr9UTvoHeCfhiF6AFTOm3CN81-xA/p.png?fv_content=true&size_mode=5'" />
       </router-link>
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
