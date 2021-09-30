@@ -12,6 +12,9 @@ import Footer from "./components/TheFooter.vue";
 
 export default {
   components: { Header, Footer },
-  name: 'App'
+  name: 'App',
+  metaInfo: {
+    title: 'Reward List Exam',
+  },
 }
 </script>
