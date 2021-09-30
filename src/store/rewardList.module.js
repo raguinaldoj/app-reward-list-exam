@@ -1,5 +1,5 @@
 import { rewardListService } from "@/common/api.service";
-import { FETCH_REWARD_LIST, FETCH_REWARD_LIST_BY_ID, SET_REWARD_LIST, SET_REWARD, SET_LOADING } from "./action.type";
+import { FETCH_REWARD_LIST, FETCH_REWARD_LIST_BY_ID, SET_REWARD_LIST, SET_REWARD, SET_LOADING, UPDATE_REWARD } from "./action.type";
 
 const state = {
   rewardList: [],
@@ -18,6 +18,12 @@ const actions = {
   async [FETCH_REWARD_LIST_BY_ID](context, reward) {
     const { data } = await rewardListService.get(reward);
     context.commit(SET_REWARD, data);
+    return data;
+  },
+  async [UPDATE_REWARD](context, reward) {
+    await context.commit(SET_LOADING);
+    const { data } = await rewardListService.put(reward);
+    await context.commit(SET_LOADING);
     return data;
   },
 };

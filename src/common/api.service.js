@@ -42,8 +42,10 @@ const ApiService = {
     return Vue.axios.put(`${resource}/${slug}`, params);
   },
 
-  put(resource, params) {
-    return Vue.axios.put(`${resource}`, params);
+  put(resource, reward) {
+    return Vue.axios.put(`${resource}/${reward}`).catch(error => {
+      throw new Error(`ApiService ${error}`);
+    });
   },
 
   delete(resource) {
@@ -61,5 +63,8 @@ export const rewardListService = {
   },
   get(reward) {
     return ApiService.get("rewardList", reward)
+  },
+  put(reward){
+    return ApiService.put("rewardList", reward)
   }
 };

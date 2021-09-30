@@ -16,7 +16,7 @@
                   class="nav-link"
                   active-class="active"
                  >
-                   <button type="button" class="btn btn-warning rounded-pill">Redeem ></button>
+                   <button :disabled="value.quantity <= 1" type="button" class="btn btn-warning rounded-pill">Redeem ></button>
                 </router-link>
             </div>
           </div>

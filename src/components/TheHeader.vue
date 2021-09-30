@@ -11,7 +11,7 @@ cl<template>
       </ul>
       <div id="header-title" class="container">
         <h2 class="text-center">Rewards</h2>
-    </div>
+     </div>
    </div>
   </nav>
 </template>

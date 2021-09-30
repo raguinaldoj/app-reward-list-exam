@@ -8,7 +8,7 @@
           <div id="detail-container" class="container rounded">
              <p id="detail-container-name">Win a {{reward.name}}</p>
              <hr/>
-             <button type="button" class="btn btn-warning rounded-pill">Redeem ></button>
+               <Modal/>
              <hr/>
              <p>{{reward.quantity}} left in the stock</p>
           </div>
@@ -23,13 +23,16 @@
             <p id="detail-container-description-value" class="text-justify">{{reward.description}}</p>
         </div>
     </div>
+   
   </div>
 </template>
 <script>
 import { FETCH_REWARD_LIST_BY_ID } from '../store/action.type';
+import Modal from '../components/Modal.vue';
 import { mapGetters } from "vuex";
 export default {
   name: "RewardDetail",
+  components: { Modal },
   mounted() {
       this.$store.dispatch(FETCH_REWARD_LIST_BY_ID, this.$route.params.id);
   },
@@ -66,10 +69,6 @@ p{
   width: 500px;
   height: 250px;
   background-color: whitesmoke;
-}
-button {
-  padding: 15px;
-  width: 200px;
 }
 
 </style>
