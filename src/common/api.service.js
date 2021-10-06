@@ -34,25 +34,12 @@ const ApiService = {
     });
   },
 
-  post(resource, params) {
-    return Vue.axios.post(`${resource}`, params);
-  },
-
-  update(resource, slug, params) {
-    return Vue.axios.put(`${resource}/${slug}`, params);
-  },
-
   put(resource, reward) {
     return Vue.axios.put(`${resource}/${reward}`).catch(error => {
       throw new Error(`ApiService ${error}`);
     });
   },
 
-  delete(resource) {
-    return Vue.axios.delete(resource).catch(error => {
-      throw new Error(`[RWV] ApiService ${error}`);
-    });
-  }
 };
 
 export default ApiService;
